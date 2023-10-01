@@ -1,38 +1,49 @@
+/* src/App.css */
 .App {
   text-align: center;
+  margin: 20px;
+  background-color: #f7f7f7; /* Set your desired background color */
+  padding: 20px; /* Add some padding for spacing */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.book-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.book {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  max-width: 300px;
+  background-color: #fff; /* Set background color for book cards */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.review {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  max-width: 400px;
+  word-wrap: break-word;
+  background-color: #fff; /* Set background color for review cards */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+button {
+  background-color: #007bff; /* Set your desired button background color */
+  color: #fff; /* Set text color for the button */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+button:hover {
+  background-color: #0056b3; /* Change color on hover */
 }
